@@ -8,38 +8,12 @@ html, body {
     height: 100%;
 }
 
-
 body {
     background-color: #333333;
     color: #dddddd;
     font-family: 'Arial', sans-serif;
     overflow: auto;
 }
-
-
-.page-heading, .contact, .page-content, .resume-content, .projects-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-
-.page-heading {
-    text-align: center;
-    font-size: 2.5em;
-}
-
-
-.contact {
-    text-align: center;
-    font-size: 1.1em;
-}
-
-
-.page-content {
-    padding: 25px 100px;
-}
-
 
 .navbar {
     display: flex;
@@ -51,66 +25,78 @@ body {
     padding: 0 2vw;
 }
 
-
 .navbar .logo img {
     height: 8vh;
     width: auto;
 }
 
-
 .navbar-tabs a {
     color: white;
     text-decoration: none;
     padding: 1vh 1vw;
-    font-size: 1vw;
+    font-size: 2vw;
     transition: background-color 0.3s;
 }
-
 
 .navbar-tabs a:hover, .navbar-tabs a.active {
     background-color: #555;
     border-bottom: 2px solid white;
 }
 
-
-.resume-content {
-    padding: 25px 0;
-}
-
-.resume-content h1, .resume-content h2, .resume-content p {
-    color: #ffffff;
-}
-
-
-.projects-content {
-    padding: 25px 0;
-    margin: 20px auto;
-}
-
-.projects-content h1 {
-    color: #ffffff;
+.page-heading {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
-
-.project-item {
-    background: #444;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+.contact {
+    text-align: center;
+    font-size: 1.1em;
 }
 
-.project-item h2 {
-    color: #FFF;
-    font-size: 1.5em;
+.page-content {
+    padding: 25px 100px;
 }
 
-.project-item p {
-    color: #BBB;
-    font-size: 1em;
+.resume-page {
+    background-color: #fdda06; /
+}
+.resume-page .navbar {
+    background-color: #fdda06; 
 }
 
+.resume-page .left-side {
+    background-color: #000; 
+    width: 15%; 
+    height: 100%; 
+    position: absolute;
+    left: 0;
+    top: 0; 
+    z-index: 1; 
+}
+
+.resume-page .main-content {
+    position: absolute;
+    left: 15%; 
+    width: 85%; 
+    top: 0;
+    height: 100%;
+    z-index: 5;
+}
+
+.resume-page .overlay {
+    background-color: #000; 
+    width: 15%; 
+    height: 60%; 
+    position: absolute;
+    left: 15%; 
+    top: 25vh; 
+    z-index: 15;
+}
+
+.resume-page .resume-content {
+    padding: 25px 0;
+    color: #000; 
+}
 
 footer {
     background-color: #222;
@@ -121,7 +107,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 
 @media (max-width: 768px) {
     .navbar .logo img {
@@ -151,5 +136,21 @@ footer {
 
     .project-item p {
         font-size: 0.9em;
+    }
+
+    .resume-page .left-side,
+    .resume-page .overlay {
+        width: 100%;
+        position: relative;
+        height: auto;
+        left: 0;
+        top: auto;
+        z-index: 1;
+    }
+
+    .resume-page .main-content {
+        left: 0;
+        width: 100%;
+        z-index: 2;
     }
 }
