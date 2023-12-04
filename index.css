@@ -1,37 +1,155 @@
-*{
-	boz-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-html {
-	margin: 0;
-	padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #333333;
-	color: #dddddd;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
+    background-color: #333333;
+    color: #dddddd;
+    font-family: 'Arial', sans-serif;
+    overflow: auto;
 }
+
+
+.page-heading, .contact, .page-content, .resume-content, .projects-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 
 .page-heading {
-	height: 30px;
-	text-align: center;
-    font-size: 50px;
+    text-align: center;
+    font-size: 2.5em;
 }
+
 
 .contact {
-	height: 20px;
-	text-align: center;
-    font-size: 22px;
+    text-align: center;
+    font-size: 1.1em;
 }
+
 
 .page-content {
-	height: 30px;
-	padding: 25px 100px;
+    padding: 25px 100px;
 }
 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    padding: 0 2vw;
+}
+
+
+.navbar .logo img {
+    height: 8vh;
+    width: auto;
+}
+
+
+.navbar-tabs a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 1vw;
+    font-size: 1vw;
+    transition: background-color 0.3s;
+}
+
+
+.navbar-tabs a:hover, .navbar-tabs a.active {
+    background-color: #555;
+    border-bottom: 2px solid white;
+}
+
+
+.resume-content {
+    padding: 25px 0;
+}
+
+.resume-content h1, .resume-content h2, .resume-content p {
+    color: #ffffff;
+}
+
+
+.projects-content {
+    padding: 25px 0;
+    margin: 20px auto;
+}
+
+.projects-content h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.project-item {
+    background: #444;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.project-item h2 {
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.project-item p {
+    color: #BBB;
+    font-size: 1em;
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .navbar .logo img {
+        height: 6vh;
+    }
+
+    .navbar-tabs a {
+        font-size: 3vw;
+    }
+
+    .page-heading {
+        font-size: 2em;
+    }
+
+    .contact {
+        font-size: 1em;
+    }
+
+    .projects-content, .resume-content, .page-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .project-item h2 {
+        font-size: 1.2em;
+    }
+
+    .project-item p {
+        font-size: 0.9em;
+    }
+}
