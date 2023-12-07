@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <title>Custom Background Page</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="test.mjs"></script>
+    <script>
+
+    function getRandomLightNeutralColor() {
+
+        const red = Math.floor(Math.random() * 46) + 154; // 200 to 255
+        const green = Math.floor(Math.random() * 46) + 154; // 200 to 255
+        const blue = Math.floor(Math.random() * 46) + 154; // 200 to 255
+
+
+        const redHex = red.toString(16).padStart(2, '0');
+        const greenHex = green.toString(16).padStart(2, '0');
+        const blueHex = blue.toString(16).padStart(2, '0');
+
+
+        return `#${redHex}${greenHex}${blueHex}`;
+    }
+
+
+    window.onload = function() {
+        const divs = document.querySelectorAll('div');
+        divs.forEach(function(div) {
+            div.style.backgroundColor = getRandomLightNeutralColor();
+        });
+    };
+
+    </script>
 </head>
 <body>
     <div class="colored-section-black"></div>
     <div class="colored-section-green"></div>
     <div class="colored-section-red"></div> 
     <div class="colored-section-yellow"></div> 
+
     <div class="inner-black"></div>
     <div class="inner-green"></div>
     <div class="inner-red"></div> 
     <div class="inner-yellow"></div>
+
+    <div class="inner-inner-black"></div>
+    <div class="inner-inner-green"></div>
+    <div class="inner-inner-red"></div> 
+    <div class="inner-inner-yellow"></div>
+
+    <div class="inner-inner-inner-black"></div>
+    <div class="inner-inner-inner-green"></div>
+    <div class="inner-inner-inner-red"></div> 
+    <div class="inner-inner-inner-yellow"></div>
+
+    <div class="middle"></div>
 </body>
 </html>
+
+
+
+

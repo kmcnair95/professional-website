@@ -9,7 +9,7 @@
 <body class="resume-page">
     <nav class="navbar">
         <a href="/" class="logo">
-            <img src="me.webp" alt="Kelton McNair">
+            <!-- <img src="me.webp" alt="Kelton McNair"> -->
         </a>
         <div class="navbar-tabs">
             <a href="index.html">Home</a>
@@ -18,13 +18,42 @@
         </div>
     </nav>
 
-    <div class="left-side"> HELLLOOOOOOOOOOOOOOOOOOOOOO</div> 
+    <div class="left-side"> </div> 
 
-    <section class="resume-content">
+    <div class="resume-content">
         <h1>Kelton Russell McNair</h1>
-    </section>
+    </div>
     
     <div class="overlay"></div> 
 </body>
+    <script>
+
+        function getRandomLightNeutralColor() {
+            const red = Math.floor(Math.random() * 26) + 154; // 200 to 255
+            const green = Math.floor(Math.random() * 26) + 154; // 200 to 255
+            const blue = Math.floor(Math.random() * 26) + 154; // 200 to 255
+
+            const redHex = red.toString(16).padStart(2, '0');
+            const greenHex = green.toString(16).padStart(2, '0');
+            const blueHex = blue.toString(16).padStart(2, '0');
+
+            return `#${redHex}${greenHex}${blueHex}`;
+    }
+
+        window.onload = function() {
+           const color = getRandomLightNeutralColor();
+           const leftDivs = document.querySelectorAll('div[class^="left"]');
+           const overlayDivs = document.querySelectorAll('div[class^="overlay"]');
+
+            const allDivs = [...leftDivs, ...overlayDivs];
+            allDivs.forEach(function(div) {
+                div.style.backgroundColor = color;
+            });
+};
+
+    </script>
 </html>
+
+
+
 
