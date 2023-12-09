@@ -3,56 +3,156 @@
 <head>
     <meta charset="utf-8">
     <title>Resume - Kelton McNair</title>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./style.css"/>
     <script type="module" defer src="./source.mjs"></script>
 </head>
 <body class="resume-page">
-    <nav class="navbar">
-        <a href="/" class="logo">
-            <!-- <img src="me.webp" alt="Kelton McNair"> -->
-        </a>
-        <div class="navbar-tabs">
-            <a href="index.html">Home</a>
-            <a href="resume.html" class="active">Resume</a>
-            <a href="projects.html">Projects</a>
+    <div class="navbar">
+        <div class="button-dropdown-container">
+            <div class="dropdown">
+                <button class="button">
+                    <span></span> 
+                    <span></span> 
+                    <span></span> 
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
         </div>
+    </div>
+
     </nav>
 
-    <div class="left-side"> </div> 
-
-    <div class="resume-content">
-        <h1>Kelton Russell McNair</h1>
+    <div class="headshot-container">
+        <img src="headshot.jpg" alt= "Kelton Headshot">
     </div>
-    
-    <div class="overlay"></div> 
+
+    <div class="name-container">
+        <h1 class="name"> <span class="highlight-resume">Kelton Russell McNair</span> </h1>
+        <!-- <h2 class="contact"><span class="highlight-resume-email"> keltonmcnair@icloud.com</span> </h2> -->
+    </div>
+
+    <div class="contact-container">
+        <h1 class="contact"><span class="highlight-resume-email"> Contact</span> </h1>
+        <h2>Email: keltonmcnair@icloud.com</h2>
+        <h2>Phone Number: 123-456-7890</h2>
+    </div>
+
+
+<!-- ===========================================Education=================================== -->
+    <div class="title-education-container">
+        <h1 class="education-title"><span class="red-color">Education</span></h1>
+    </div>
+
+    <div class="education-container-associates">
+            <div class="education-associates">
+                    <div class="milestone-Associates">
+                        <h1>Associates Degree</h1>
+                        <h2>Computer Sciece</h2>
+                        <h3>Ivy Tech Community College</h3>
+                        <h4>2019-2022</h4>
+                        </div>
+            </div>
+    </div>
+
+    <div class="education-container-bachelors">
+            <div class="education-bachelors">
+                    <div class="milestone-Bachelors">
+                        <h1>Bachelores Degree</h1>
+                        <h2>Computer Science</h2>
+                        <h3>Indiana State University</h3>
+                        <h4>2022-2024(expected)</h4>
+                        </div>
+            </div>
+    </div>
+
+    <div class="title-acolades-container">
+        <h1 class="acolades-title"><span class="red-color">Awards</span></h1>
+        <h2>
+            Indiana State Dean’s List Spring 23'<br>
+            Indiana State Dean’s List Fall 22'<br>
+            Ivy Tech Dean’s List Summer 21'<br>
+            Ivy Tech Dean’s List Spring 20'<br>
+            Ivy Tech Dean’s List Fall 19'<br>
+            Ivy Tech Dean’s List Summer 19'
+
+        </h2>
+    </div>
+<!-- ===========================================Experience=================================== -->
+    <div class="title-experience-container">
+        <h1 class="experience-title"><span class="red-color">Experience</span></h1>
+    </div>
+
+
+    <div class="experience-container-hss">
+            <div class="experience-hss">
+                    <div class="job-hss">
+                        <h1>Allied Universal</h1>
+                        <h2>Security Officer Trainer</h2>
+                        <h3>Denver CO, 2016</h3>
+                        </div>
+            </div>
+        </div>
+
+    <div class="experience-container-allied">
+            <div class="experience-allied">
+                    <div class="job-allied">
+                        <h1>Healthcase Security Services</h1>
+                        <h2>Security Officer / Trainer</h2>
+                        <h3>Aurora CO, 2017</h3>
+                        <h4></h4>
+                        </div>
+            </div>
+    </div>
+
+    <div class="experience-container-llc">
+            <div class="experience-llc">
+                    <div class="job-llc">
+                        <h1>Kelton McNair LLC</h1>
+                        <h2>Owner / Operator</h2>
+                        <h3>Transportation Logistics / Chauffeur</h3>
+                        <h4>Indianapolis IN, 2017-Current</h4>
+                        </div>
+            </div>
+    </div>
+<!-- ===========================================Skills=================================== -->
+    <div class="skills-container">
+            <div class="skills">
+                <h1 class="skills-title"><span class="red-color">Skills</span></h1>
+                    <h2>
+                    Languages: Python, C, C++, C#, Java, node.JS<br>
+                    Databases: SQL (MySQL), SQL Server, SQLite<br>
+                    Frameworks: Unix, Git<br>
+                    Operating Systems: Unix Based, OSX, Debian, Windows, Windows Server<br>
+                    Essential Skills: Decision Making, Leadership, Problem-Solving, Teamwork, Active Listening, Communication, Critical Thinking, Costumer Service<br>
+                    Other: Microsoft Office Suite, Adobe Software Suite'
+
+                    </h2>
+            </div>
+    </div>
+<!-- ===========================================Timeline=================================== -->
+    <div class="line-container">
+        <div class="dot" style="top: 0%;"></div>
+        <div class="dot" style="top: 33%;"></div>
+        <div class="dot" style="top: 60%;"></div>
+        <div class="dot" style="top:90%"> </div>
+        <div class="line"></div>
+    </div>
+
+    <div class="years-2016"> 2016</div>
+    <div class="years-2017"> 2017</div>
+    <div class="years-2022"> 2022</div>
+    <div class="years-2024"> 2024</div>
+
+    <div class="accolades"> awards</div>
 </body>
-    <script>
 
-        function getRandomLightNeutralColor() {
-            const red = Math.floor(Math.random() * 26) + 154; // 200 to 255
-            const green = Math.floor(Math.random() * 26) + 154; // 200 to 255
-            const blue = Math.floor(Math.random() * 26) + 154; // 200 to 255
-
-            const redHex = red.toString(16).padStart(2, '0');
-            const greenHex = green.toString(16).padStart(2, '0');
-            const blueHex = blue.toString(16).padStart(2, '0');
-
-            return `#${redHex}${greenHex}${blueHex}`;
-    }
-
-        window.onload = function() {
-           const color = getRandomLightNeutralColor();
-           const leftDivs = document.querySelectorAll('div[class^="left"]');
-           const overlayDivs = document.querySelectorAll('div[class^="overlay"]');
-
-            const allDivs = [...leftDivs, ...overlayDivs];
-            allDivs.forEach(function(div) {
-                div.style.backgroundColor = color;
-            });
-};
-
-    </script>
 </html>
+
+
 
 
 

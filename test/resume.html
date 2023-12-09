@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Resume - Kelton McNair</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <script type="module" defer src="./source.mjs"></script>
+</head>
+<body class="resume-page">
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <!-- <img src="me.webp" alt="Kelton McNair"> -->
+        </a>
+        <div class="navbar-tabs">
+            <a href="index.html">Home</a>
+            <a href="resume.html" class="active">Resume</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <div class="left-side"> </div> 
+
+    <div class="resume-content">
+        <h1>Kelton Russell McNair</h1>
+    </div>
+    
+    <div class="overlay"></div> 
+</body>
+    <script>
+
+        function getRandomLightNeutralColor() {
+            const red = Math.floor(Math.random() * 26) + 154; // 200 to 255
+            const green = Math.floor(Math.random() * 26) + 154; // 200 to 255
+            const blue = Math.floor(Math.random() * 26) + 154; // 200 to 255
+
+            const redHex = red.toString(16).padStart(2, '0');
+            const greenHex = green.toString(16).padStart(2, '0');
+            const blueHex = blue.toString(16).padStart(2, '0');
+
+            return `#${redHex}${greenHex}${blueHex}`;
+    }
+
+        window.onload = function() {
+           const color = getRandomLightNeutralColor();
+           const leftDivs = document.querySelectorAll('div[class^="left"]');
+           const overlayDivs = document.querySelectorAll('div[class^="overlay"]');
+
+            const allDivs = [...leftDivs, ...overlayDivs];
+            allDivs.forEach(function(div) {
+                div.style.backgroundColor = color;
+            });
+};
+
+    </script>
+</html>
+
+
+
+

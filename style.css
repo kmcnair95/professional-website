@@ -1,0 +1,773 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    color: #dddddd;
+    font-family: 'Arial', sans-serif;
+    overflow: auto;
+}
+
+
+
+/*footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
+/*@media (max-width: 768px) {
+    .dropdown {
+        display: block;
+    }
+
+}*/
+
+
+/* ============================================= index-page =============================================*/
+
+
+.page-heading {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color:black;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 50px;
+    width: 40%;
+
+}
+.content-right-top{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color:black;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    font-size: 50px;
+}
+.content-right-bottom{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    position: absolute;
+    left: 65%;
+    top: 38%;
+    color:black;
+    font-size: 25px;
+}
+
+.highlight {
+    background-color: orangered; 
+    color: black; 
+    font-size: 60px;
+}
+
+.highlight-resume {
+    background-color: orangered; 
+    color: black; 
+    font-size: 100px;
+}
+
+.highlight-resume-email{
+    background-color: transparent; 
+    color: orangered;
+    font-size: 50px;
+}
+
+.red-color{
+    color: orangered;
+}
+/* =============================================resume-page=============================================*/
+
+
+.headshot-container {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    padding: 0px;
+    background-color: transparent;
+    width: 6.5in;
+}
+
+.headshot-container img{
+        width: 6.5in;
+        height: 7.75in;
+/*        border-radius: 50%*/
+}
+
+
+
+/* ----------contact--------*/
+.name-container{
+    position: fixed;
+    top: 0%;
+    right: 20%;
+    padding: 1px;
+    width: 60%;
+    color: black;
+/*    background-color: yellow;*/
+    text-align: center;
+    font-size: 40px;
+
+
+}
+
+
+
+.contact-container{
+    position: fixed;
+    top: 15%;
+    left: 76%;
+    padding: 1px;
+    width: 20%;
+    color: black;
+/*    background-color: yellow;*/
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.title-skills-container{
+    position: fixed;
+    left: 5%;
+    top: 51%;
+    color: black;
+    width: 16%;
+/*    background-color: yellow;   */
+}
+
+.title-acolades-container{
+    position: fixed;
+    left: 5%;
+    top: 51%;
+    color: black;
+    width: 16%;
+/*    background-color: yellow;   */
+}
+
+/* ----------education--------*/
+
+.title-education-container{
+    position: fixed;
+    left: 10%;
+    top: 15%;
+    color: black;
+    width: 10%;
+/*    background-color: yellow;*/
+}
+
+.education-title{
+    text-align: center;
+    font-size: 50px;
+}
+
+.education-container-associates{
+    position: fixed;
+    left: 5%;
+    top: 45%;
+    color: black;
+    width: 16%;
+/*    background-color: yellow;*/
+}
+
+.milestone-Associates{
+    text-align: center;
+
+}
+
+.milestone-Associates h1,
+.milestone-Associates h2,
+.milestone-Associates h3,
+.milestone-Associates h4 {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.education-container-bachelors{
+    position: fixed;
+    left: 5%;
+    top: 26%;
+    color: black;
+    width: 16%;
+/*    background-color: green;*/
+}
+
+.milestone-Bachelors{
+    text-align: center;
+}
+
+
+.milestone-Bachelors h1,
+.milestone-Bachelors h2,
+.milestone-Bachelors h3,
+.milestone-Bachelors h4 {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+.title-acolades-container{
+    position: fixed;
+    left: 1%;
+    top: 66%;
+    color: black;
+    width: 20%;
+/*    background-color: yellow;   */
+
+}
+/* ----------experience--------*/
+
+
+.title-experience-container{
+    position: fixed;
+    left: 27%;
+    top: 15%;
+    color: black;
+    width: 16%;
+/*    background-color: yellow;*/
+}
+
+
+.experience-title{
+    text-align: center;
+    font-size: 50px;
+}
+
+.experience-container{
+    position: fixed;
+    left: 50%;
+    top: 50;
+    color: black;
+
+}
+
+.experience-container-llc{
+    position: fixed;
+    left: 28%;
+    top: 25%;
+    color: black;
+    width: 15%;
+/*    background-color: green;*/
+}
+
+.job-llc{
+    text-align: center;
+}
+
+.experience-container-allied{
+    position: fixed;
+    left: 28%;
+    top: 70%;
+    color: black;
+    width: 15%;
+/*    background-color: green;*/
+}
+
+.job-allied{
+    text-align: center;
+}
+
+.experience-container-hss{
+    position: fixed;
+    left: 28%;
+    top: 90%;
+    color: black;
+    width: 15%;
+/*    background-color: green;*/
+}
+
+.job-hss{
+    text-align: center;
+}
+
+
+.job-llc h1,
+.job-llc h2,
+.job-llc h3,
+.job-llc h4 {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.job-hss h1,
+.job-hss h2,
+.job-hss h3,
+.job-hss h4 {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.job-allied h1,
+.job-allied h2,
+.job-allied h3,
+.job-allied h4 {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* ----------skills--------*/
+.skills-container{
+    position: fixed;
+    bottom: 35%;
+    right: 35%;
+    padding: 1px;
+    width: 30%;
+    color: black;
+/*    background-color: yellow;*/
+}
+
+
+.years-2016 {
+    position: fixed;
+    top: 94%;
+    left: 26%;
+    color: black;
+    z-index: 15;
+    font-size: 30px;
+}
+.years-2017 {
+    position: fixed;
+    top: 71%;
+    left: 26%;
+    color: black;
+    z-index: 15;
+    font-size: 30px;
+}
+.years-2022 {
+    position: fixed;
+    top: 49%;
+    left: 22%;
+    color: black;
+    z-index: 15;
+    font-size: 30px;
+}
+.years-2024 {
+    position: fixed;
+    top: 24%;
+    left: 22%;
+    color: black;
+    z-index: 15;
+    font-size: 30px;
+}
+
+
+/* =============================================project-page =============================================*/
+
+
+
+
+
+/* =============================================navigation =============================================*/
+
+
+/* --------------------------navbar -----------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    background-color: black;
+    width: 200px;
+    height: auto;
+    padding: 0 2vw;
+    position: relative;
+}
+
+
+.navbar-tabs a {
+    color: yellow;
+    text-decoration: none;
+    padding: 1vh 1vw;
+    font-size: 2vw;
+    transition: background-color 0.3s;
+    background-color: black;
+}
+
+.navbar-tabs a:hover, .navbar-tabs a.active {
+    background-color: orange;
+    border-bottom: 2px solid white;
+}
+
+
+
+
+.projects-page .navbar, .index-page .navbar, .resume-page .navbar {
+    background-color: transparent;
+}
+
+
+.navbar .button, .navbar .dropdown {
+    position: relative;
+    margin-top: 10%;  
+    margin-left: 10%; 
+}
+
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-content {
+    margin-left: 10%;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 2; 
+    left: 0;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --------------------------------------buttons --------------------------------------*/
+
+.button {
+    background-color: black; 
+    background-image: linear-gradient(to bottom right, #333, #000);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 
+                0 6px 20px rgba(0, 0, 0, 0.1), 
+                inset 0 1px 4px rgba(255, 255, 255, 0.3);
+    width: 150px;
+    height: 100px;
+}
+
+
+
+.button span {
+    display: block;
+    position: absolute;
+    top: 99%;
+    height: 5px; 
+    width: 50%; 
+    left: 25%; 
+    background-color: orangered; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /
+}
+
+
+.button span:nth-child(1) {
+    top: 35%; 
+}
+
+.button span:nth-child(2) {
+    top: 50%; 
+}
+
+.button span:nth-child(3) {
+    top: 65%; 
+}
+
+
+
+/* --------------------------------------dropdown --------------------------------------*/
+
+
+.dropdown {
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; 
+    min-width: 150px;
+    box-shadow: none;
+    padding: 12px 16px;
+    z-index: 1;
+    left: 0;
+    border: none;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #333; 
+    color: white; 
+}
+
+
+.dropdown-content a {
+    color: orangered; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown, .dropdown-content, .dropdown-content a, .dropdown-content a::before, .dropdown-content a::after {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/*=============================================resume background=============================================*/
+
+
+body.resume-page {
+    background: url('try-this.jpeg') no-repeat center center fixed;
+    background-size: 100% 100%;
+
+}
+
+.line-container {
+    position: relative;
+    height: 70%; 
+    width: 8px; 
+    top: 15%;
+    left: 25%;
+
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-left: 8px solid red;
+}
+
+.dot {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 15;
+}
+/*=============================================main background=============================================-*/
+
+
+.page-heading{
+    color: black;
+
+}
+
+.content-right{
+    color: black;
+/*    position: absolute;*/
+/*    top: 50%;
+    right: 80%;*/
+}
+
+.content-right-lower{
+    color: black;
+/*    position: absolute;*/
+/*    top: 40%;
+    right: 80%;*/
+}
+
+body.index-page {
+    background: url('try-this.jpeg') no-repeat center center fixed;
+    background-size: 100% 100%;
+
+}
+
+
+
+/* =============================================background for project page=============================================*/
+
+.background-design-far-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 90%;
+    background-color: #000000; 
+    z-index: -1;
+}
+
+.background-design-far-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 90%;
+    background-color: #008000; 
+    z-index: -1;
+}
+
+.background-design-bottom-middle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 10%;
+    background-color: #FF0000; 
+    z-index: -1;
+}
+
+.background-design-top-middle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90%;
+    height: 10%;
+    background-color: #FFFF00; 
+    z-index: -1;
+}
+
+
+.background-design-first-inner-right {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    width: 10%;
+    height: 70%;
+    background-color: #000000; 
+    z-index: -1;
+}
+
+.background-design-fist-inner-left{
+    position: absolute;
+    right: 80%;
+    bottom: 10%;
+    width: 10%;
+    height: 70%;
+    background-color: #008000; 
+    z-index: -1;
+}
+
+.background-design-first-inner-top{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 70%;
+    height: 10%;
+    background-color: #FF0000; 
+    z-index: -1;
+}
+
+.background-design-first-inner-bottom{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    width: 70%;
+    height: 10%;
+    background-color: #FFFF00; 
+    z-index: -1;
+}
+
+.background-design-second-inner-left {
+    background-color: #000000; 
+    position: absolute;
+    right: 70%;
+    bottom: 30%;
+    width: 10%;
+    height: 50%;
+    z-index: -1;
+}
+
+.background-design-second-inner-right{
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    width: 10%;
+    height: 50%;
+    background-color: #008000; 
+    z-index: -1;
+}
+
+.background-design-second-inner-bottom{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    width: 50%;
+    height: 10%;
+    background-color: #FF0000; 
+    z-index: -1;
+}
+
+.background-design-second-inner-top{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 50%;
+    height: 10%;
+    background-color: #FFFF00; 
+    z-index: -1;
+}
+
+.background-design-third-inner-left {
+    background-color: #008000; 
+    position: absolute;
+    right: 60%;
+    bottom: 30%;
+    width: 10%;
+    height: 30%;
+    z-index: -1;
+}
+
+.background-design-third-inner-right{
+    position: absolute;
+    right: 30%;
+    bottom: 40%;
+    width: 10%;
+    height: 30%;
+    background-color: #000000; 
+    z-index: -1;
+}
+
+.background-design-third-inner-top{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    width: 30%;
+    height: 10%;
+    background-color: #FF0000; 
+    z-index: -1;
+}
+
+.background-design-third-inner-bottom{
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    width: 30%;
+    height: 10%;
+    background-color: #FFFF00; 
+    z-index: -1;
+}
+
+.background-design-center{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 20%;
+    height: 20%;
+    background-color: #CA0CA0; 
+    z-index: -1;
+}
+

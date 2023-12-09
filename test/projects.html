@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Projects - Kelton McNair</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <script type="module" defer src="./source.mjs"></script>
+</head>
+<body class ="projects-page">
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <!-- <img src="me.webp" alt="Kelton McNair"> -->
+        </a>
+        <div class="navbar-tabs">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html" class="active">Projects</a>
+        </div>
+    </nav>
+
+<!--     <section class="projects-content">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2>Projects</h2>
+        </div>
+    </section> -->
+
+
+    <div class="background-design-far-left"></div>
+    <div class="background-design-far-right"></div>
+    <div class="background-design-bottom-middle "></div> 
+    <div class="background-design-top-middle"></div> 
+    <div class="background-design-first-inner-right"></div>
+    <div class="background-design-fist-inner-left"></div>
+    <div class="background-design-first-inner-top"></div> 
+    <div class="background-design-first-inner-bottom"></div>
+    <div class="background-design-second-inner-left"></div>
+    <div class="background-design-second-inner-right"></div>
+    <div class="background-design-second-inner-bottom"></div> 
+    <div class="background-design-second-inner-top"></div>
+    <div class="background-design-third-inner-right"></div>
+    <div class="background-design-third-inner-left"></div>
+    <div class="background-design-third-inner-top"></div> 
+    <div class="background-design-third-inner-bottom"></div>
+    <div class="background-design-center"></div>
+
+</body>
+
+
+<script>
+    function getRandomLightNeutralColor() {
+        // Generate each color component in the higher range to ensure lightness
+        const red = Math.floor(Math.random() * 46) + 154; // 200 to 255
+        const green = Math.floor(Math.random() * 46) + 154; // 200 to 255
+        const blue = Math.floor(Math.random() * 46) + 154; // 200 to 255
+
+        const redHex = red.toString(16).padStart(2, '0');
+        const greenHex = green.toString(16).padStart(2, '0');
+        const blueHex = blue.toString(16).padStart(2, '0');
+
+        return `#${redHex}${greenHex}${blueHex}`;
+    }
+
+
+window.onload = function() {
+    const divs = document.querySelectorAll('div[class^="background-design"]');
+    divs.forEach(function(div) {
+        div.style.backgroundColor = getRandomLightNeutralColor();
+    });
+};
+
+
+
+</script>
+</html>
+
+
+
+
